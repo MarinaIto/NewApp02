@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A43537A6-9F3B-45A0-B87F-2EA01E7D464B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NewApp02</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>38B26FF4F2EE46BDECD3F6731392D4DCF2367B3A</key>
+		<string>https://github.com/MarinaIto/NewApp02.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NewApp02.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>38B26FF4F2EE46BDECD3F6731392D4DCF2367B3A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MarinaIto/NewApp02.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>38B26FF4F2EE46BDECD3F6731392D4DCF2367B3A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>38B26FF4F2EE46BDECD3F6731392D4DCF2367B3A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NewApp02</string>
+		</dict>
+	</array>
+</dict>
+</plist>
