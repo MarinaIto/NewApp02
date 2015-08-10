@@ -13,10 +13,16 @@
 @end
 
 @implementation AppDelegate
+@synthesize iPath;
+@synthesize list;
+
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    list = @"";
+    iPath = 0;
     return YES;
 }
 

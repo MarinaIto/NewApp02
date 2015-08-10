@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    int iPath;
+    NSString *list;
+    
+}
+
+@property(nonatomic,strong) NSString *list;
+
+@property(nonatomic,assign) int iPath;
 
 @property (strong, nonatomic) UIWindow *window;
+
 
 
 @end
