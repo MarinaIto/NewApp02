@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="NQJ-Fa-ADa" kind="push" id="KAU-GV-shE"/>
+                                            <segue destination="NQJ-Fa-ADa" kind="push" id="O3Z-KO-a5Z"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -97,14 +97,22 @@
                     <view key="view" contentMode="scaleToFill" id="xeo-2i-82P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1g8-cW-GX6">
+                                <rect key="frame" x="96" y="126" width="183" height="195"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="nVX-sO-4Kw"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="logoImage" destination="1g8-cW-GX6" id="klm-bm-DRp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4T-7f-zYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732.5" y="383.5"/>
+            <point key="canvasLocation" x="1746.5" y="388.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4tS-ZK-2IC">

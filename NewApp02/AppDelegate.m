@@ -15,6 +15,9 @@
 @implementation AppDelegate
 @synthesize iPath;
 @synthesize list;
+@synthesize secondList;
+@synthesize secondListImage;
+@synthesize secondiPath;
 
 
 
@@ -23,6 +26,9 @@
     // Override point for customization after application launch.
     list = @"";
     iPath = 0;
+    secondListImage =@"";
+    secondList =@"";
+    secondiPath = 0;
     return YES;
 }
 

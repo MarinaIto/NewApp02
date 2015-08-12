@@ -17,6 +17,16 @@
 @property(nonatomic,strong) NSString *list;
 
 @property(nonatomic,assign) int iPath;
+@property(nonatomic,assign) int secondiPath;
+
+
+@property(nonatomic,strong) NSString *secondList;
+
+@property(nonatomic,strong) NSString *secondListImage;
+
+
+
+
 
 @property (strong, nonatomic) UIWindow *window;
 

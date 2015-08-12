@@ -28,6 +28,8 @@
     _firstTableView.dataSource = self;
     _firstTableView.delegate = self;
     
+    _appDelegate = [[UIApplication sharedApplication]delegate];
+    
     self.title = @"リスト";
     
     _ary = @[@"車",@"時計"];
@@ -92,8 +94,7 @@
     
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    //NSLog(@"indexPath.row = %ld",(long)indexPath.row);
+      
     NSLog(@"indexPath.row =%d",(int)indexPath.row);
     //タップしたcellとリンクする配列の中身（名前）を取得
     NSLog(@"リストの中身 = %@", _ary[indexPath.row]);
@@ -106,12 +107,9 @@
     NSLog(@"appDelegate.iPath 1 = %d",_appDelegate.iPath);//初期値の0が入っている
     _appDelegate.iPath = (int)indexPath.row;
     NSLog(@"appDelegate.iPath 2 = %d", _appDelegate.iPath);//選択したセルのidexPath.rowが入る
-    NSLog(@"indexPath= %d",indexPath.row);
+    NSLog(@"indexPath= %ld",(long)indexPath.row);
     
 }
-
-
-
 
 
 

@@ -7,8 +7,11 @@
 //
 
 #import "ThirdViewController.h"
+#import "AppDelegate.h"
 
-@interface ThirdViewController ()
+@interface ThirdViewController (){
+AppDelegate *_appDelegate;
+}
 
 @end
 
@@ -17,6 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _appDelegate = [[UIApplication sharedApplication]delegate];
+    
+    //self.title = _appDelegate.secondList;
+    NSLog(@"%@",_appDelegate.secondList);
+    
+    //self.logoImage.image = [UIImage imageNamed:_appDelegate.secondListImage];
+    
+
     
 }
 
