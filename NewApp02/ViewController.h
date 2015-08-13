@@ -12,5 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *firstTableView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *sampleImageView;
+
+
 @end
 

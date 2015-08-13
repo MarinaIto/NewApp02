@@ -14,6 +14,7 @@
 @interface ViewController (){
     AppDelegate *_appDelegate; //定義
     NSArray *_ary;
+    NSArray *_images;
 
 }
 
@@ -25,18 +26,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _firstTableView.dataSource = self;
-    _firstTableView.delegate = self;
+    self.firstTableView.dataSource = self;
+    self.firstTableView.delegate = self;
     
     _appDelegate = [[UIApplication sharedApplication]delegate];
     
     self.title = @"リスト";
     
     _ary = @[@"車",@"時計"];
-    NSLog(@"title = %@",_ary);
     
+   _images = @[@"mainCarImage.jpg",@"mainWatchImage.jpg"];
     
 
+    NSLog(@"title = %@",_ary);
+    //NSLog(@"images = %@", _images);
+    
+    
+    
+    self.sampleImageView.image = [UIImage imageNamed:@"mainCarImage.jpg"];
     
 //    
 //    //プロジェクト内のファイルにアクセスできるオブジェクトを宣言
@@ -88,8 +95,20 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = _ary[indexPath.row];
+   
     //indexPath.section;
+   
+    UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
+//    UILabel *label = (UILabel *)[cell viewWithTag:2];
+    imageView.image = [UIImage imageNamed:_images[indexPath.row]];
+//    NSLog(@"imageView.image %@",imageView.image);
+//    label.text = _ary[indexPath.row];
+    
+    
+    //画像を丸くする
+//    imageView.clipsToBounds = YES;
+//    imageView.layer.cornerRadius = 22.0f;
+
     return cell;
     
 }
@@ -104,6 +123,7 @@
     
     //遷移した先にデータを送るには？
     //AppDelegate
+    
     NSLog(@"appDelegate.iPath 1 = %d",_appDelegate.iPath);//初期値の0が入っている
     _appDelegate.iPath = (int)indexPath.row;
     NSLog(@"appDelegate.iPath 2 = %d", _appDelegate.iPath);//選択したセルのidexPath.rowが入る

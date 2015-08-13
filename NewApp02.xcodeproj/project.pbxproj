@@ -17,6 +17,9 @@
 		9C43B1CD1B7636B900CF395A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C43B1CC1B7636B900CF395A /* SecondViewController.m */; };
 		9C43B1D01B76374900CF395A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C43B1CF1B76374900CF395A /* ThirdViewController.m */; };
 		9C43B1D21B763EC200CF395A /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C43B1D11B763EC200CF395A /* Property List.plist */; };
+		9CC22D281B7B11BD0080C9F0 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CC22D271B7B11BD0080C9F0 /* test.plist */; };
+		9CC22D2A1B7B98390080C9F0 /* logoImages in Resources */ = {isa = PBXBuildFile; fileRef = 9CC22D291B7B98390080C9F0 /* logoImages */; };
+		9CC22D2C1B7B9AE20080C9F0 /* mainImage in Resources */ = {isa = PBXBuildFile; fileRef = 9CC22D2B1B7B9AE20080C9F0 /* mainImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		9C43B1CE1B76374900CF395A /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		9C43B1CF1B76374900CF395A /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		9C43B1D11B763EC200CF395A /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		9CC22D271B7B11BD0080C9F0 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		9CC22D291B7B98390080C9F0 /* logoImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = logoImages; sourceTree = "<group>"; };
+		9CC22D2B1B7B9AE20080C9F0 /* mainImage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mainImage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +115,11 @@
 		9C43B1A51B76364300CF395A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9CC22D2B1B7B9AE20080C9F0 /* mainImage */,
+				9CC22D291B7B98390080C9F0 /* logoImages */,
 				9C43B1A61B76364300CF395A /* Info.plist */,
 				9C43B1A71B76364300CF395A /* main.m */,
+				9CC22D271B7B11BD0080C9F0 /* test.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,9 +221,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC22D2C1B7B9AE20080C9F0 /* mainImage in Resources */,
 				9C43B1B11B76364300CF395A /* Main.storyboard in Resources */,
+				9CC22D2A1B7B98390080C9F0 /* logoImages in Resources */,
 				9C43B1B61B76364300CF395A /* LaunchScreen.xib in Resources */,
 				9C43B1D21B763EC200CF395A /* Property List.plist in Resources */,
+				9CC22D281B7B11BD0080C9F0 /* test.plist in Resources */,
 				9C43B1B31B76364300CF395A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewApp02/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -374,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewApp02/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -432,6 +446,7 @@
 				9C43B1C71B76364400CF395A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C43B1C81B76364400CF395A /* Build configuration list for PBXNativeTarget "NewApp02Tests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +455,7 @@
 				9C43B1CA1B76364400CF395A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,7 +21,6 @@
 
 
 @property(nonatomic,strong) NSString *secondList;
-
 @property(nonatomic,strong) NSString *secondListImage;
 
 
